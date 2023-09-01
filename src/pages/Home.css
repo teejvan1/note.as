@@ -1,0 +1,30 @@
+.main {
+  height: calc(100vh - 6.5rem);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10.5rem;
+}
+
+.main h1 {
+  font-family: 'Lora', serif;
+  font-size: 11rem;
+  margin-bottom: 3.2rem;
+}
+
+.main h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 5.8rem;
+}
+
+.main a:link,
+.main a:visited {
+  font-family: 'Lora', serif;
+  color: white;
+  background-color: #7d82c4;
+  padding: 1.2rem 1.2rem;
+  font-size: 2rem;
+  text-decoration: none;
+  border-radius: 3px;
+}

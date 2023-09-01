@@ -1,0 +1,67 @@
+.New .textarea {
+  font-family: 'Lora', serif;
+  font-size: 1.92rem;
+  border: 0;
+  outline: none;
+  position: fixed;
+  top: 7.5rem;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 2rem 1rem;
+  line-height: 1.4;
+  padding: 0 25%;
+  letter-spacing: 0.6px;
+}
+
+.btn_new:link,
+.btn_new:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  display: inline-block;
+  padding: 1.2rem 3.2rem;
+  border-radius: 3px;
+  color: black;
+  position: absolute;
+  top: 6.4rem;
+  right: 0;
+  opacity: 0.2;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn_new:hover,
+.btn_new:active {
+  opacity: 1;
+}
+
+.btn_previous:link,
+.btn_previous:visited {
+  text-decoration: none;
+  font-size: 1.6rem;
+  display: inline-block;
+  padding: 1.2rem 3.2rem;
+  border-radius: 3px;
+  color: black;
+  position: absolute;
+  top: 6.4rem;
+  left: 0;
+  opacity: 0.2;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn_previous:hover,
+.btn_previous:active {
+  opacity: 1;
+}
+
+@media (max-width: 37.5em) {
+  .btn_new:link,
+  .btn_new:visited {
+    padding: 1.2rem 0.8rem;
+  }
+  .btn_previous:link,
+  .btn_previous:visited {
+    padding: 1.2rem 0.8rem;
+  }
+}

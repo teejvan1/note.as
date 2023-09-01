@@ -1,0 +1,17 @@
+.Pricing p {
+  font-size: 40rem;
+  text-align: center;
+}
+
+@media (max-width: 56.25em) {
+  .Pricing p {
+    font-size: 42rem;
+  }
+}
+
+@media (max-width: 37.5em) {
+  .Pricing p {
+    margin-top: 12.8rem;
+    font-size: 20rem;
+  }
+}
