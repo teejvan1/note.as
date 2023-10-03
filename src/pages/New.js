@@ -6,7 +6,10 @@ import { useParams } from 'react-router-dom'
 function New() {
   const { id } = useParams()
 
-  const text = localStorage.getItem(`text${id}`)
+  let text = localStorage.getItem(`text${id}`)
+  if (text === 'null') {
+    text = ''
+  }
   const [data, setData] = useState(text)
 
   useEffect(() => {
@@ -18,7 +21,7 @@ function New() {
       className='New
   '
     >
-      <Navbar2 />
+      <Navbar2 id={id} />
       <textarea
         value={data}
         onChange={e => setData(e.target.value)}
@@ -26,9 +29,13 @@ function New() {
         placeholder='Write...'
         autoFocus
       ></textarea>
-      <a className='btn_previous' href={`/new/${+id - 1}`}>
-        Previous Page
-      </a>
+      {+id === 1 ? (
+        ''
+      ) : (
+        <a className='btn_previous' href={`/new/${+id - 1}`}>
+          Previous Page
+        </a>
+      )}
       <a className='btn_new' href={`/new/${+id + 1}`}>
         Next Page
       </a>

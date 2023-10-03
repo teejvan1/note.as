@@ -2,7 +2,7 @@ import React from 'react'
 import './Navbar2.css'
 import logo from '../img/logo.webp'
 
-function Navbar2() {
+function Navbar2({ id }) {
   return (
     <div>
       <nav className='Navbar2'>
@@ -18,6 +18,7 @@ function Navbar2() {
           <li>
             <a href='/pricing'>Pricing</a>
           </li>
+          <div className='page'>Page-{id}</div>
           <li>
             <a href='/more'>More</a>
           </li>

@@ -15,6 +15,14 @@
   align-items: center;
 }
 
+.page {
+  position: absolute;
+  left: 50%;
+  font-size: 1.8rem;
+  color: #514f4f;
+  padding: 0.8rem 2.4rem;
+}
+
 .Navbar2 li:last-child {
   flex-grow: 1;
   text-align: right;
