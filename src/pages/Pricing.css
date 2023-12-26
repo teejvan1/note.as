@@ -1,17 +1,71 @@
-.Pricing p {
-  font-size: 40rem;
-  text-align: center;
+.Pricing section {
+  max-width: 84rem;
+  margin: 0 auto;
+}
+
+.Pricing h1 {
+  font-family: 'Lora', serif;
+  font-size: 3.6rem;
+  margin-top: 4.8rem;
+}
+
+.Pricing h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin-top: 2.4rem;
+}
+
+.price-container {
+  display: flex;
+  margin-top: 3.6rem;
+  gap: 2.4rem;
+}
+
+.privacy {
+  flex: 1;
+}
+
+.optimization {
+  flex: 1;
+}
+
+.stability {
+  flex: 1;
+}
+
+.price-container h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.price-container p {
+  margin-top: 2.4rem;
+  font-size: 2rem;
+  color: #595959;
+  line-height: 1.8;
 }
 
 @media (max-width: 56.25em) {
-  .Pricing p {
-    font-size: 42rem;
+  .Pricing .section-container {
+    margin: 12.8rem 9.6rem 0;
   }
 }
 
 @media (max-width: 37.5em) {
-  .Pricing p {
-    margin-top: 12.8rem;
-    font-size: 20rem;
+  .Pricing .section-container {
+    margin: 9.6rem 2.4rem 0;
+  }
+
+  .stability h2 {
+    margin-bottom: 3.6rem;
+    margin-top: 1.8rem;
+    margin-left: 1.6rem;
+  }
+
+  .Pricing h1 {
+    margin-left: 1.6rem;
+  }
+  .Pricing h2 {
+    margin: 2.4rem 1.6rem 0;
   }
 }
